@@ -26,6 +26,7 @@ You can find them in two sizes: the default `.btn` and the smaller `.btn-sm`.
 {% example html %}
 <button class="btn" type="button">Button</button>
 <button class="btn btn-sm" type="button">Small button</button>
+<button class="btn btn-primary" type="button">Primary button</button>
 {% endexample %}
 
 ## Primary
