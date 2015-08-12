@@ -78,7 +78,7 @@ $ bower install
 From the Terminal, start a local Jekyll server:
 
 ```bash
-$ jekyll serve
+$ jekyll serve --baseurl ''
 ```
 
 Open a second Terminal tab to automatically recompile the Sass files, run autoprefixer, and update our [Primer stats file](#primer-stats):
