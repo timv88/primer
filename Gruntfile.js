@@ -87,7 +87,6 @@ module.exports = function(grunt) {
       },
       pages: {
         options: {
-          login:  'https://login@github.com/timv88/primer.git',
           remote: 'git@github.com:timv88/primer.git',
           branch: 'gh-pages'
         }
