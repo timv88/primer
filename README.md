@@ -58,6 +58,8 @@ Primer's documentation is built with Jekyll and published to `http://primercss.i
 
 You'll need the following installed:
 
+- [Ruby](http://rubyinstaller.org/downloads)
+- [Ruby DevKit](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit)
 - Latest Jekyll (minimum v2.2.0): `$ gem install jekyll`
 - Latest Rouge: `$ gem install rouge`
 - Latest Sass: `$ gem install sass`
