@@ -78,6 +78,12 @@ module.exports = function(grunt) {
       }
     },
 
+    shell: {
+      serve: {
+        command: 'jekyll serve --baseurl ""'
+      }
+    },
+
     buildcontrol: {
       options: {
         dir: '_site',
@@ -101,9 +107,16 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-parker');
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-shell');
 
-  // Generate and format the CSS
-  grunt.registerTask('default', ['sass', 'jekyll', 'postcss', 'parker']);
+  // Default: compile and watch for changes
+  grunt.registerTask('default', ['compile', 'watch']);
+
+  // Generate and format the CSS and docs
+  grunt.registerTask('compile', ['sass', 'jekyll', 'postcss', 'parker']);
+
+  // Local web server
+  grunt.registerTask('serve', ['shell:serve']);
 
   // Publish to GitHub
   grunt.registerTask('publish', ['jekyll', 'postcss:docs', 'buildcontrol:pages']);

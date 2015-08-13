@@ -78,16 +78,16 @@ $ bower install
 From the Terminal, start a local Jekyll server:
 
 ```bash
-$ jekyll serve --baseurl ''
+$ grunt serve
 ```
 
 Open a second Terminal tab to automatically recompile the Sass files, run autoprefixer, and update our [Primer stats file](#primer-stats):
 
 ```bash
-$ grunt watch
+$ grunt
 ```
 
-Alternatively, you can manually run `grunt` and `jekyll serve` when needed.
+Alternatively, you can manually run `grunt compile` and `jekyll serve` when needed.
 
 ### Publishing
 
