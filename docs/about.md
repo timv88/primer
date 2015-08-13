@@ -22,7 +22,6 @@ See the [roadmap](/roadmap) for a rough outline on what's slated for future vers
 ### Dependencies
 
 - Our styles are built with SCSS.
-- Bower is used to link GitHub assets, namely our [Octicons](http://octicons.github.com) icon font and Markdown styles.
 - Autoprefixer is used to generate vendor-prefixed declarations and is handled via our Gruntfile.
 - A custom plugin for snippet and example combos, `example.rb`, was created as a fork of Jekyll's built-in `highlight` plugin.
 

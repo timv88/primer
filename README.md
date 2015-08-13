@@ -26,16 +26,6 @@ _**Heads up!** We love open source, but Primer is unlikely to add new features t
 
 Download the [latest release](https://github.com/primer/primer/releases/latest) and copy the SCSS files over to your own project. Once your files are in place, jump to the [usage guidelines](#usage) for including Primer into your own CSS.
 
-### Bower
-
-```
-$ bower install primer-css --save
-```
-
-### Things to know
-
-**Hey, GitHubbers!** For GitHub.com, you'll need to  `cd` into `vendor/assets` and run `bower install` there. Be sure to commit and push all the changes, including the `bower.json` and everything under `bower_components`.
-
 ## Usage
 
 Once included, simply `@import` either the master SCSS file, or the individual files as you need them.
@@ -70,7 +60,6 @@ Chances are you have all this already if you work on `github/github` or similar 
 
 ```bash
 $ npm install
-$ bower install
 ```
 
 ### Running locally
@@ -102,28 +91,6 @@ This takes the `_site` directory, generates it's own Git repository there, and p
 ### Primer stats
 
 When compiling or watching the Sass files, Primer will automatically generate a `.primer-stats.md` file. This is tracked in the Git repository to provide us historical and contextual information on the changes we introduce. For example, we'll know when the number of selectors or declarations rises sharply within a single change.
-
-## Updating
-
-Within `bower.json`, update to a new release by changing the version number that follows the `#` in the dependency URL.
-
-```json
-{
-  "name": "myapp",
-  "dependencies": {
-    "primer-css": "x.x.x"
-  }
-}
-```
-
-To pull down the updated package, `cd` into `vendor/assets`, and run `bower install`.
-
-```
-$ cd vendor/assets
-$ bower install
-```
-
-Check in `bower.json` and all changes under `vendor/assets/bower_components`.
 
 ## Development
 
